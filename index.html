@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>Studio Landing Page</title>
 </head>
 
@@ -15,7 +16,11 @@
                 <h3><span>A+</span> Studio</h3>
             </div>
             <nav>
-                <ul>
+                <div class="menu-toggle">
+                    <i id="toggle" class="hamburger fas fa-bars" onclick="toggleMenu()"></i>
+                </div>
+
+                <ul class="menu open">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">What We Do</a></li>
                     <li><a href="#">Service</a></li>
@@ -41,45 +46,49 @@
                 <div class="rectangle"></div>
             </div>
         </div>
+
         <div class="our-client reveal">
-            <h2>Our Client</h2>
-            <div class="our-client-companies">
+            <div>
+                <h2>Our Client</h2>
                 <p>Several selected clients, who already believe in our service.</p>
-                <img src="./images/Google Logo.svg" alt="">
-                <img src="./images/Airbnb Logo.svg" alt="">
-                <img src="./images/Uber Eats Logo.svg" alt="">
-                <img src="./images/Amazon Logo.svg" alt="">
             </div>
+            <img src="./images/Google Logo.svg" alt="">
+            <img src="./images/Airbnb Logo.svg" alt="">
+            <img src="./images/Uber Eats Logo.svg" alt="">
+            <img src="./images/Amazon Logo.svg" alt="">
         </div>
         <div class="how-can-we-help">
             <div class="hcwh-rec"></div>
             <div class="hcwh-bgi"></div>
             <div class="hcwh-dot"></div>
             <div class="hcwh-ell"></div>
-            <div class="hcwh-con1 reveal">
-                <h3>How can we help your Business ?</h3>
-                <p>We build readymade websites, mobile applications, and elaborate online business services.</p>
-            </div>
-            <div class="hcwh-con2">
-                <div class="box reveal1">
-                    <img src="./images/box-search 1.svg" alt="Image" class="box-1">
-                    <h3>Business Idea Planning</h3>
-                    <p>We present you a proposal and discuss niffty-gritty like</p>
+            <div class="hcwh-con">
+                <div class="hcwh-con1 reveal">
+                    <h3>How can we help your Business ?</h3>
+                    <p>We build readymade websites, mobile applications, and elaborate online business services.</p>
                 </div>
-                <div class="box reveal2">
-                    <img src="./images/empty-wallet 1.svg" alt="Image" class="box-2">
-                    <h3>Financial Planning System</h3>
-                    <p>Protocols apart from aengage models, pricing billing</p>
-                </div>
-                <div class="box reveal1">
-                    <img src="./images/code-1 1.svg" alt="Image" class="box-3">
-                    <h3>Development Website and App</h3>
-                    <p>Communication protocols apart from engagement models</p>
-                </div>
-                <div class="box reveal2">
-                    <img src="./images/chart-square 1.svg" alt="Image" class="box-4">
-                    <h3>Market Analysis Project</h3>
-                    <p>Protocols apart from aengage models, pricing billing</p>
+                <div class="hcwh-con2">
+
+                    <div class="box reveal1">
+                        <img src="./images/box-search 1.svg" alt="Image" class="box-1">
+                        <h3>Business Idea Planning</h3>
+                        <p>We present you a proposal and discuss niffty-gritty like</p>
+                    </div>
+                    <div class="box reveal2">
+                        <img src="./images/empty-wallet 1.svg" alt="Image" class="box-2">
+                        <h3>Financial Planning System</h3>
+                        <p>Protocols apart from aengage models, pricing billing</p>
+                    </div>
+                    <div class="box reveal1">
+                        <img src="./images/code-1 1.svg" alt="Image" class="box-3">
+                        <h3>Development Website and App</h3>
+                        <p>Communication protocols apart from engagement models</p>
+                    </div>
+                    <div class="box reveal2">
+                        <img src="./images/chart-square 1.svg" alt="Image" class="box-4">
+                        <h3>Market Analysis Project</h3>
+                        <p>Protocols apart from aengage models, pricing billing</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,27 +118,57 @@
                     <div class="happy-client-main-first-ellipse"></div>
                 </div>
                 <div class="happy-client-main-second reveal2">
-                    <h4>Matthew Paul</h4>
-                    <p>Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high
-                        quality and quick turnaround time. Highly recommend.</p>
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide">
+                                <h3>Matthew Paul</h3>
+                                <p>Perfect, very good job! Thank you for the amazing design and work. Really impressed
+                                    with
+                                    the high
+                                    quality and quick turnaround time. Highly recommend.</p>
+                            </div>
+                            <div class="slide">
+                                <h3>Emily Johnson</h3>
+                                <p>Exceptional work! Emily Johnson surpassed all expectations with her impeccable design
+                                    skills and
+                                    dedication to excellence. </p>
+                            </div>
+                            <div class="slide">
+                                <h3>Michael Smith</h3>
+                                <p>Michael Smith's design expertise and commitment to delivering excellence were evident
+                                    throughout the
+                                    project. I couldn't be happier with the results. </p>
+                            </div>
+                            <div class="slide">
+                                <h3>Sarah Davis</h3>
+                                <p>Remarkable job! Sarah Davis went above and beyond to bring my vision to life with her
+                                    exceptional
+                                    design skills. </p>
+                            </div>
+                            <div class="slide">
+                                <h3>Alex Martinez</h3>
+                                <p>Alex Martinez's work is exceptional in every way. From the initial concept to the
+                                    final
+                                    product,
+                                    Alex's attention to detail and creative flair shine through. </p>
+                            </div>
+                            <div class="slide">
+                                <h3>Jessica Nguyen</h3>
+                                <p>Jessica Nguyen's design prowess is unmatched. Her knack for turning concepts into
+                                    breathtaking
+                                    visuals is simply extraordinary. </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="happy-client-main-second-pagination">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8" cy="8" r="8" fill="#2639ED" />
-                        </svg>
-
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8" cy="8" r="8" fill="#E7F0FC" />
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8" cy="8" r="8" fill="#E7F0FC" />
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8" cy="8" r="8" fill="#E7F0FC" />
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8" cy="8" r="8" fill="#E7F0FC" />
-                        </svg>
-
+                        <div class="bullets">
+                            <div class="bullet active" data-index="0"></div>
+                            <div class="bullet" data-index="1"></div>
+                            <div class="bullet" data-index="2"></div>
+                            <div class="bullet" data-index="3"></div>
+                            <div class="bullet" data-index="4"></div>
+                            <div class="bullet" data-index="5"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="happy-client-main-third reveal3">
@@ -138,7 +177,7 @@
                 </div>
             </div>
         </div>
-        <div class="newsletter">
+        <div class="newsletter reveal">
             <!-- <div class="newsletter-section"> -->
             <!-- <div class="newsletter-dots"></div> -->
             <div class="rectangle-newsletter reveal">
@@ -148,8 +187,10 @@
                 </div>
                 <div class="newsletter-right">
                     <div class="rectangle-newsletter-right"></div>
-                    <input type="text" placeholder="Enter your email address..">
-                    <button>Contact Now</button>
+                    <div class="newsletter-email">
+                        <input type="text" placeholder="Enter your email address..">
+                        <button>Contact Now</button>
+                    </div>
                 </div>
             </div>
             <!-- <div class="rectangle2-newsletter"></div> -->
